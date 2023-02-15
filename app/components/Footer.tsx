@@ -22,7 +22,7 @@ export default function Footer() {
                 </Box>
 
 
-                <Box><Button colorScheme={'teal'} size={{base:"sm",sm:"sm",lg:"lg"}} color={'black'} mt='-15px' >join Now</Button></Box>
+                <Box><Button colorScheme={'teal'} size={{base:"sm",sm:"sm",lg:"lg"}} color={'black'} mt='-25px' >join Now</Button></Box>
                 {/* <Image /> */}
 
             </Flex>
