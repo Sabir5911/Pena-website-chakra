@@ -8,7 +8,7 @@ export default function Footer() {
         <Box backgroundImage={'banner.jpeg'} height='auto' >
             <Header />
             <Flex flexDirection={'column'} gap={{base:"9px",sm:"25px",lg:"30px"}} ml={{base:"30px",sm:"75px",lg:"200px"}} mt={{base:"60px",sm:"150px",lg:"200px"}} fontFamily={'inherit'}>
-                <Box pb='20px' >
+                <Box  >
 
                     <Heading color={'teal'} fontSize={{base:"15px",sm:"25px",lg:"45px"}}>
                         <Text color={'white'}>Become</Text>
@@ -27,8 +27,8 @@ export default function Footer() {
 
             </Flex>
 
-            <Flex justifyContent={'right'} mt={{base:"-12rem",sm:"-18rem",lg:"-28rem"}} mr={{base:"-13px",sm:"-40px",lg:"-40px"}}>
-                <Image src='banner2.svg' alt='logo' width={{base:"180px",sm:"350px",lg:"600px"}}/>
+            <Flex justifyContent={'right'} mt={{base:"-12rem",sm:"-18rem",lg:"-29rem"}} mr={{base:"-13px",sm:"-40px",lg:"-40px"}}>
+                <Image src='banner2.svg' alt='logo' width={{base:"180px",sm:"350px",lg:"550px"}}/>
 
             </Flex>
         </Box>
