@@ -27,7 +27,7 @@ export default function Footer() {
 
             </Flex>
 
-            <Flex justifyContent={'right'} mt={{base:"-12rem",sm:"-18rem",lg:"-29rem"}} mr={{base:"-13px",sm:"-40px",lg:"-40px"}}>
+            <Flex justifyContent={'right'} mt={{base:"-12rem",sm:"-18rem",lg:"-29rem"}} mr={{base:"-13px",sm:"-40px",lg:"8px"}}>
                 <Image src='banner2.svg' alt='logo' width={{base:"180px",sm:"350px",lg:"550px"}}/>
 
             </Flex>
