@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Button, Container, Flex, Heading, Text ,Image} from "@chakra-ui/react"
 import Header from './Header'
 
-export default function Footer() {
+export default function Second() {
     return <>
 
         <Box backgroundImage={'banner.jpeg'} height='auto' >
