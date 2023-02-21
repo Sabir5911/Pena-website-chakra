@@ -1,12 +1,9 @@
 "use client"
+
 import React from 'react'
-import Header from './components/Header'
-import Second from './components/Second'
-import Contect from './components/Contect'
+import Web2 from './Web2'
 export default function page() {
   return <>
-  
-  <Second />
-<Contect />
+  <Web2 />
   </>
 }
