@@ -8,12 +8,12 @@ export default function Header() {
 
       <Flex   placeContent= {{sm:'space-around',base:'space-around',lg:'space-around'}}>
         
-        <Box  mt={{sm:'16px',base:'16px',lg:"15px"}} ml='-11px'>
+        <Box  mt={{sm:'16px',base:'16px',lg:"20px"}} ml='-11px'>
 
           <Image src='/logo.svg'  w={{sm:'60px',base:'50px',lg:"110px"}} />
         </Box>
 
-        <Flex gap={{sm:'30px',base:'12px',lg:"50px"}} placeItems='center' color={'white'}  mt={{sm:'18px',base:'12px',lg:"15px"}} flexGrow={{sm:'0.3',base:'0.2',lg:"0.4"}} >
+        <Flex gap={{sm:'30px',base:'12px',lg:"50px"}} placeItems='center' color={'white'}  mt={{sm:'18px',base:'12px',lg:"25px"}} flexGrow={{sm:'0.3',base:'0.2',lg:"0.4"}} >
 
           <Link href={'/'}>Home</Link>
 
@@ -30,7 +30,7 @@ export default function Header() {
 
         <Link href={'https://portal.piaic.org/signup'} target='_blank'>
         
-        <Button  colorScheme={'teal'} color='black'  size={{sm:'sm',base:'sm',lg:"md"}} mt={{sm:'24px',base:'10px',lg:"20px"}}>
+        <Button  colorScheme={'teal'} color='black'  size={{sm:'sm',base:'sm',lg:"md"}} mt={{sm:'34px',base:'15px',lg:"30px"}}>
         Apply
           </Button>
           </Link>
