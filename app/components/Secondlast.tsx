@@ -5,14 +5,14 @@ import Last from './End'
 export default function Secondlast() {
   return <>
   
-  <Box bg='#09121D' maxWidth={'1440px'} >
+  <Box bg='#09121D' maxWidth={'1440px'}  >
                           
            <Box color={'#11AD8E'} fontFamily='inherit' >
             <Heading textAlign={'center'} justifyContent='center' fontSize={'60px'} pt='100px'>Our Partners</Heading>
             <Image src='/Group/fire.svg' ml='-19px' backgroundColor={'#09121D'}/ >
             <Image src='/Group/rocket.svg' ml='25px' mt='-263px'/>
 
-<Flex justifyContent={'center'} gap='55px' bg='#343232' m='auto' >
+<Flex justifyContent={'center'} gap='55px' bg='#343232' >
     <Image src='/Group/2.svg'/>
     <Image src='/Group/3.svg'/>
     <Image src='/Group/4.svg'/>
