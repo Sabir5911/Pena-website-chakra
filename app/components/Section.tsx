@@ -4,9 +4,8 @@ import { Box, Button, Container, Flex, Heading, Image,Text } from "@chakra-ui/re
 export default function Section() {
   return <>
   
-             <Box  bg='#09121D' pt='100px' >
+             <Box  bg='#09121D' pt='100px' maxWidth={'1440px'} maxW={'1440px'}>
                 
-                <Container maxW={'1440px'} height='750px'>
 
 
                     <Box textAlign={'center'} color='#11AD8E' >
@@ -42,7 +41,6 @@ export default function Section() {
                         </Box>
                     </Flex>
 
-                </Container>
                 
                 </Box> 
   

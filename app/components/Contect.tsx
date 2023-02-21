@@ -4,8 +4,7 @@ import { Box, Button, Container, Flex, Heading, Text,Image } from "@chakra-ui/re
 export default function Contect() {
   return <>
 
-  <Box  bg='#09121D'>
-    <Container maxW={'1440px'}>
+  <Box  bg='#09121D' maxWidth={'1440px'}>
              <Flex flexDirection={'row'} justifyContent='center'>
               
            <Box>
@@ -26,7 +25,6 @@ export default function Contect() {
          
           </Flex>      
 
-          </Container>
 
   </Box>
   </>

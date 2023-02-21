@@ -5,9 +5,8 @@ import { Box, Heading, Text, Flex, Image, Container, HStack,AvatarGroup,AvatarBa
 
 export default function Third() {
     return <>
-        <Box height='870px' backgroundImage={'/back/back.svg'} >
+        <Box height='870px' backgroundImage={'/back/back.svg'} maxWidth={'1440px'} >
 
-            <Container maxW={'1440px'} >
 
             <Flex color='white'  direction='column' placeItems={'center'} fontSize='20px' ml='-190px' gap={'40px'}>
                 <Heading color={'white'} mt='100px' fontSize={'50px'}>Student Feedback</Heading>
@@ -83,7 +82,6 @@ export default function Third() {
             <Flex justify={'right'}>
             <Image src='/back/2.svg' mt='180px' />
             </Flex>
-            </Container>
 
         </Box>
 

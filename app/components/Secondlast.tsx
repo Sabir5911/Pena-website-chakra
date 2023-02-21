@@ -5,8 +5,7 @@ import Last from './End'
 export default function Secondlast() {
   return <>
   
-  <Box bg='#09121D' >
-    <Container maxWidth={'1400px'}>
+  <Box bg='#09121D' maxWidth={'1440px'} >
                           
            <Box color={'#11AD8E'} fontFamily='inherit' >
             <Heading textAlign={'center'} justifyContent='center' fontSize={'60px'} pt='100px'>Our Partners</Heading>
@@ -49,7 +48,6 @@ export default function Secondlast() {
            </Box>
            <Last />
 
-</Container>
 
   </Box>
   

@@ -10,9 +10,9 @@ import Last from '../components/End'
 export default function page() {
   return <>
 
-    <Box bg='gray.700'>
-      <Container maxW={'1440px'}>
-        <Header />
+    <Box bg='gray.700' maxW={'1440px'}>
+    <Header />
+
 
         <Heading textAlign={'center'} color='white' mt='50px' >Available Programs</Heading>
         <Text textAlign={'center'} color='#11AD8E' mt='15px' fontSize={'18px'}>
@@ -95,9 +95,9 @@ export default function page() {
           </Text>
         </Box>
 
-        <Last />
 
-      </Container>
+      <Last />
+
 
     </Box>
 
@@ -105,6 +105,6 @@ export default function page() {
 
 
 
-
+ 
 
 }

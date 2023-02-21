@@ -4,9 +4,8 @@ import Link from 'next/link'
 export default function Header() {
   return <>
 
-    <Box fontSize={{sm:'12px',base:'10px',lg:"20px"}} fontFamily='inherit' fontWeight={'medium'} bg='rgba(18, 18, 18, 0.4)' boxShadow={'rgba(18, 18, 18, 0.4)'} >
+    <Box fontSize={{sm:'12px',base:'10px',lg:"20px"}} fontFamily='inherit' maxWidth={'1440px'} height={{sm:'60px',base:'60px',lg:"110px"}} fontWeight={'medium'} bg='rgba(18, 18, 18, 0.4)' boxShadow={'rgba(18, 18, 18, 0.4)'} >
 
-      <Container maxWidth={'1440px'} height={{sm:'60px',base:'60px',lg:"110px"}} >
       <Flex   placeContent= {{sm:'space-around',base:'space-around',lg:'space-around'}}>
         
         <Box  mt={{sm:'16px',base:'16px',lg:"15px"}} ml='-11px'>
@@ -38,7 +37,6 @@ export default function Header() {
           </Flex>
 
       </Flex>
-      </Container>
     </Box>
 
   </>

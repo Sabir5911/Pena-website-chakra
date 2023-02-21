@@ -4,10 +4,9 @@ import Header from './Header'
 export default function Second() {
     return <>
 
-        <Box backgroundImage={'banner.jpeg'}  >
+        <Box backgroundImage={'banner.jpeg'} maxWidth={'1440px'}  >
         <Header />
 
-            <Container maxWidth={'1440px'}>
             <Flex flexDirection={'column'} gap={{base:"9px",sm:"25px",lg:"30px"}} ml={{base:"30px",sm:"80px",lg:"90px"}} mt={{base:"60px",sm:"150px",lg:"150px"}} fontFamily={'inherit'}>
                 <Box  >
 
@@ -32,7 +31,6 @@ export default function Second() {
                 <Image src='banner2.svg' alt='logo' width={{base:"160px",sm:"200px",lg:"450px"}}/>
 
             </Flex>
-            </Container>
         </Box>
     </>
 }

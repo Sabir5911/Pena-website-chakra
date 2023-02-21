@@ -6,9 +6,9 @@ import Last from '../components/End'
 export default function page() { 
   return <>
 
-<Box    bg='gray.700' >
-  <Container maxW={'1440px'}>
-  <Header />
+<Box    bg='gray.700'  maxW={'auto'}>
+<Header />
+
   
 
 
@@ -63,7 +63,7 @@ In this brand-new type of curriculum, students will learn how to make money and 
     </Flex>
 
     <Last />           
-    </Container> 
+
    </Box>
          
   </>

@@ -4,7 +4,7 @@ import { Box, Button, Container, Flex, Heading, Text, Image, SimpleGrid, Input, 
 
 export default function Last() {
   return <>
-<Container maxW={'1440px'}  backgroundImage={'b.svg'}  alignItems='center'height={{base:"",sm:"",lg:"260px"}} w={{base:"",sm:"",lg:"1346px"}} ml='-15px' mt='50px ' >
+  <Box  backgroundImage={'b.svg'}  maxW={'1440px'}  mt='50px'  h='280px'> 
 
       <SimpleGrid templateColumns={'repeat(4,1fr)'}    >
 
@@ -43,12 +43,11 @@ export default function Last() {
 
       </SimpleGrid>
 
-<Divider color={'#11AD8E'}/>
-      <Box   mt='-2px' height={{base:"",sm:"",lg:"0px"}} mx='-18px'>
+<Divider color={'#11AD8E'} mt='15px'/>
+      <Box    >
         <Text color={'#11AD8E'} fontSize='18px' textAlign={'center'} pt='32px'>    2023 Panaverse Dao. All rights reserved.
         </Text>
       </Box>
-    </Container>
-
+    </Box>
   </>
 }
