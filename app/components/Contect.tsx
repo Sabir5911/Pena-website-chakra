@@ -8,10 +8,10 @@ export default function Contect() {
              <Flex flexDirection={'row'} justifyContent='center'>
               
            <Box>
-            <Image src='img.svg' width={{base:"9px",sm:"25px",lg:"350px"}} mt='14rem'/>
+            <Image src='img.svg' width={{base:"9px",sm:"25px",lg:"450px"}} mt='14rem'/>
             </Box>        
 
-            <Box textAlign={'center'} width={{base:"9px",sm:"25px",lg:"550px"}} height={{base:"9px",sm:"25px",lg:"350px"}} borderRadius='10px'mt='140px' fontFamily={'inherit'} color={'#11AD8E'} bg='blackAlpha.500'>
+            <Box textAlign={'center'} width={{base:"9px",sm:"25px",lg:"550px"}} height={{base:"9px",sm:"25px",lg:"350px"}} borderRadius='10px'mt='140px' fontFamily={'inherit'} color={'#11AD8E'} bg='gray.800'>
                 <Heading pt='65px'>The Program in a Nutshell</Heading>
                 <Heading pt='0.9rem' fontSize={{base:"9px",sm:"25px",lg:"20px"}} textDecoration='underline'>Earn While You Learn</Heading>
 
