@@ -1,10 +1,18 @@
 import React from 'react'
 import { Box, Button, Container, Flex, Heading, Image,Text } from "@chakra-ui/react"
 import Link from 'next/link'
+import { RevealWrapper } from  'next-reveal'
+
 export default function Header() {
   return <>
+         <RevealWrapper origin='top' delay={100} duration={600} distance='500px' reset={true}>
 
-    <Box fontSize={{sm:'12px',base:'10px',lg:"20px"}} fontFamily='inherit' maxWidth={'1440px'} height={{sm:'60px',base:'60px',lg:"110px"}} fontWeight={'medium'} bg='rgba(18, 18, 18, 0.4)' boxShadow={'rgba(18, 18, 18, 0.4)'} >
+     <Box  fontSize={{sm:'12px',base:'10px',lg:"20px"}} fontFamily='inherit'  height={{sm:'60px',base:'60px',lg:"110px"}} fontWeight={'medium'} bg='rgba(18, 18, 18, 0.4)' boxShadow={'rgba(18, 18, 18, 0.4)'} >
+
+<Container maxWidth={'1440px'}>
+ 
+
+
 
       <Flex   placeContent= {{sm:'space-around',base:'space-around',lg:'space-around'}}>
         
@@ -18,10 +26,10 @@ export default function Header() {
           <Link href={'/'}>Home</Link>
 
           <Link href={'/About'}>About</Link>
-
+ 
           <Link href={'/Courses'}>Courses</Link>
 
-          <Link href={'https://www.piaic.org/howitworks'}> Contact</Link>
+          <Link href={'https://www.piaic.org/howitworks'}> Contact</Link> 
 
 
         </Flex>
@@ -37,7 +45,10 @@ export default function Header() {
           </Flex>
 
       </Flex>
+      </Container>
+
     </Box>
+    </RevealWrapper>
 
   </>
 }

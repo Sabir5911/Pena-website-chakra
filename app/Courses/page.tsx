@@ -1,90 +1,77 @@
 "use client"
 
-
-
-
-import React from 'react'
+import { RevealWrapper } from 'next-reveal'
+import { Data, Data2 } from '../DataBase/Data'
 import { Box, Button, Container, Flex, Heading, Text, Image, HStack, Divider } from "@chakra-ui/react"
 import Header from '../components/Header'
 import Last from '../components/End'
 export default function page() {
   return <>
 
-    <Box bg='gray.700' maxW={'1440px'}>
-    <Header />
+    <Box bg='gray.800' >
+      <Header />
+
+      <Container maxW={'1440px'}> 
+<Box textAlign={'center'}>
+<RevealWrapper origin='top' delay={200} duration={1200} distance='50px' reset={true}>
+
+<Heading  color='white' mt='50px' >Available Programs</Heading>
+          <Text textAlign={'center'} color='#11AD8E' mt='15px' fontSize={'18px'}>
+            After completing the first two quarters the participants will select one or more specializations consisting of two courses each
+
+          </Text>
+          </RevealWrapper >
+
+</Box>
+        
+        <RevealWrapper origin='top' delay={200} duration={1400} distance='500px' reset={true}  >
+          <Flex mt='50px' justifyContent={'center'} fontStyle='inherit' textAlign='center' gap={'60px'} >
+
+            {Data.map((elm) => (
 
 
-        <Heading textAlign={'center'} color='white' mt='50px' >Available Programs</Heading>
-        <Text textAlign={'center'} color='#11AD8E' mt='15px' fontSize={'18px'}>
-          After completing the first two quarters the participants will select one or more specializations consisting of two courses each
+              <Box w='320px' bg='gray.700' boxShadow='dark-lg' letterSpacing='1px' border='10px' borderRadius={'15px'} >
 
-        </Text>
+                <Image mx='auto' dropShadow={'2xl'} src={elm.src} borderRadius={'8px'} w='262px' h='230px' objectFit={'cover'} mt='40px' />
 
-        <Flex mt='50px' justifyContent={'center'} fontStyle='inherit' textAlign='center' gap={'80px'} >
-          <Flex w='340px' placeItems={'center'} bg='gray.850' flexDirection={'column'} boxShadow='2xl' letterSpacing='1px' border='10px' borderRadius={'15px'} >
+                <Heading fontSize={'20px'} py='25px' color='white'> {elm.Headin1} <br /> Specialization</Heading>
 
-            <Image src='https://toolxox.com/dl/adobe/tmp/images/dl.beatsnoop.com-thumb-1676975854.jpg' borderRadius={'8px'} w='282px' h='230px' objectFit={'cover'} mt='44px' />
+                <Button colorScheme={'teal'}  mb='30px' size={'md'}>{elm.Text1}</Button>
 
-            <Heading fontSize={'20px'} py='35px' color='white'>Web 3.0 and Metaverse <br /> Specialization</Heading>
 
-            <Button colorScheme={'teal'} mb='45px'>Read More</Button>
+              </Box>
+            ))} 
+ 
+          </Flex>
+        </RevealWrapper >
+        {/* ///////////////////////// */}
+        <RevealWrapper origin='left' delay={200} duration={1500} distance='500px' reset={true}  >
+
+
+          <Flex mt='120px' justifyContent={'center'} fontStyle='inherit' textAlign='center' gap={'60px'} mb='80px'>
+
+            {Data2.map((elm) => (
+              <Box w='320px' bg='gray.700' flexDirection={'column'} boxShadow='dark-lg' letterSpacing='1px' border={'10px'} borderRadius='15px' >
+
+                <Image mx='auto' dropShadow={'2xl'} src={elm.src} w='262px' h='230px' objectFit={'cover'} mt='40px' borderRadius={'8px'} />
+
+                <Heading fontSize={'20px'} py='25px' color='white'>{elm.Headin1} <br />Specialization</Heading>
+
+                <Button colorScheme={'teal'}  mb='30px'>{elm.Text1}</Button>
+
+              </Box>
+            ))}
 
           </Flex>
-          <Flex w='340px' placeItems={'center'} flexDirection={'column'} letterSpacing='1px' boxShadow='2xl' border='10px' borderRadius={'15px'}>
+        </RevealWrapper >
 
-            <Image src='https://toolxox.com/dl/adobe/tmp/images/dl.beatsnoop.com-thumb-1676976450.jpg' borderRadius={'8px'} w='282px' h='230px' objectFit={'cover'} mt='44px' />
+        <Divider color={'white'}/>
+        <Box w={'700px'} mx='auto' mt='40px' textAlign={'center'}>
+        <RevealWrapper origin='top' delay={300} duration={1000} distance='5px'  reset={true} >
 
-            <Heading fontSize={'20px'} py='35px' color='white'>Artificial Intelligence (AI)<br /> Specialization</Heading>
-            <Button colorScheme={'teal'} mb='45px'>Read More</Button>
+          <Heading color={'#11AD8E'}>Getting Ready for the Next Generation <br />  of the Internet</Heading> 
+          </RevealWrapper>
 
-          </Flex>
-          <Flex w='340px' placeItems={'center'} flexDirection={'column'} letterSpacing='1px' boxShadow='2xl' border={'3px'} borderColor=''>
-
-            <Image src='https://platform9.com/wp-content/uploads/2019/12/cloud-native-challenges.png' borderRadius={'8px'} w='282px' h='230px' objectFit={'cover'} mt='44px' />
-
-            <Heading fontSize={'20px'} py='35px' color='white'>Cloud-Native Computing <br />Specialization</Heading>
-            <Button colorScheme={'teal'} mb='45px'>Read More</Button>
-
-          </Flex>
-
-
-
-
-        </Flex>
-
-        <Flex mt='120px' justifyContent={'center'} fontStyle='inherit' textAlign='center' gap={'80px'} mb='80px'>
-          <Flex w='340px' placeItems={'center'} flexDirection={'column'} boxShadow='2xl' letterSpacing='1px' border={'3px'} borderColor=''>
-
-            <Image src='https://imageio.forbes.com/specials-images/imageserve/632dbbaa69b953ca837d2c1f/Network-and-data-connection/0x0.jpg?format=jpg&crop=5700,3206,x0,y0,safe&width=960' w='282px' h='230px' objectFit={'cover'} mt='44px' borderRadius={'8px'} />
-
-            <Heading fontSize={'20px'} py='35px' color='white'>Ambient Computing and IoT <br />Specialization</Heading>
-
-            <Button colorScheme={'teal'} mb='45px'>Read More</Button>
-
-          </Flex>
-          <Flex w='340px' placeItems={'center'} flexDirection={'column'} letterSpacing='1px' border='10px' borderRadius={'15px'} boxShadow='2xl'>
-
-            <Image src='https://genomicsengland.imgix.net/images/Technology/Bioinformatics-and-data-hands.jpg?auto=format%2Ccompress&fit=max&q=80&w=1200&s=950955ef2fb07d99e2411d5f1078cc2f' w='282px' h='230px' objectFit={'cover'} mt='44px' borderRadius={'8px'} />
-
-            <Heading fontSize={'20px'} py='35px' color='white'>Genomics and <br /> Bioinformatics</Heading>
-            <Button colorScheme={'teal'} mb='45px'>Read More</Button>
-
-          </Flex>
-          <Flex w='340px' placeItems={'center'} flexDirection={'column'} letterSpacing='1px' boxShadow='2xl' border='10px' borderRadius={'15px'}>
-
-            <Image src='https://www.tail-f.com/wordpress/wp-content/uploads/2021/07/transaction-blog-feature-image-e1626927706942.jpg' w='282px' h='230px' objectFit={'cover'} mt='44px' borderRadius={'8px'} />
-
-            <Heading fontSize={'20px'} py='35px' color='white'>Network and Automation <br />Specialization</Heading>
-            <Button colorScheme={'teal'} mb='45px'>Read More</Button>
-
-          </Flex>
-
-
-
-        </Flex>
-        <Divider color={'red.300'} />
-        <Box w={'700px'} mx='auto' mt='40px'>
-          <Heading color={'#11AD8E'}>Getting Ready for the Next Generation of the Internet</Heading>
           <Text textAlign={'justify'} color='white' mt='20px' fontSize={'18px'}>
             The internet is without a doubt the most important technological development in human history. Web3, 3D Metaverse
             , AI, IoT, Cloud, and Edge technologies expand the internet as we know it by introducing novel features and advancements
@@ -95,16 +82,11 @@ export default function page() {
           </Text>
         </Box>
 
+      </Container>
 
       <Last />
 
-
     </Box>
-
   </>
-
-
-
- 
 
 }

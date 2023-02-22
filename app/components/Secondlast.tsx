@@ -1,14 +1,17 @@
 import React from 'react'
 import { Box, Button, Container, Flex, Heading, Text,Image, Card } from "@chakra-ui/react"
 import Last from './End'
+import { RevealWrapper } from 'next-reveal'
 
 export default function Secondlast() {
   return <>
   
-  <Box bg='#09121D' maxWidth={'1440px'}  >
-                          
-           <Box color={'#11AD8E'} fontFamily='inherit' >
-            <Heading textAlign={'center'} justifyContent='center' fontSize={'60px'} pt='100px'>Our Partners</Heading>
+  <Box bg='#09121D'   >
+                          <Container maxWidth={'1440px'}>
+                         
+
+           <Box color={'#11AD8E'} fontFamily='inherit' > 
+           <RevealWrapper origin='left' delay={300} duration={1000} distance='500px'  reset={true}> <Heading textAlign={'center'} justifyContent='center' fontSize={'60px'} pt='100px'>Our Partners</Heading></RevealWrapper> 
             <Image src='/Group/fire.svg' ml='-19px' backgroundColor={'#09121D'}/ >
             <Image src='/Group/rocket.svg' ml='25px' mt='-263px'/>
 
@@ -30,10 +33,11 @@ export default function Secondlast() {
             <Heading >Cities</Heading>
     </Box>
 
-    <Image src='/city/isl.svg' />
+    <Image src='/city/isl.svg' /> 
     <Image src='/city/kar.svg' />
     <Image src='/city/lah.svg' />
     <Image src='/city/pesh.svg' />
+    
 
     <Card  bg='#343232' width={'208px'} height='309px' textAlign={'center'} justify='center'>
        
@@ -41,11 +45,12 @@ export default function Secondlast() {
         Coming <br /> Soon
        </Heading>
     </Card>
-
 </Flex>
-
+ 
 
            </Box>
+
+           </Container>
            <Last />
 
 

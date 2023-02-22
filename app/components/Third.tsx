@@ -1,11 +1,13 @@
 
 import React from 'react'
 import { Box, Heading, Text, Flex, Image, Container, HStack,AvatarGroup,AvatarBadge,Avatar} from '@chakra-ui/react'
+import { RevealWrapper } from 'next-reveal'
 
 
 export default function Third() {
     return <>
-        <Box height='870px' backgroundImage={'/back/back.svg'} maxWidth={'1440px'} >
+        <Box height='870px' backgroundImage={'/back/back.svg'}  >
+            <Container maxWidth={'1440px'}>
 
 
             <Flex color='white'  direction='column' placeItems={'center'} fontSize='20px' ml='-190px' gap={'40px'}>
@@ -78,11 +80,12 @@ export default function Third() {
                
             </Flex>
           
-            
+            <RevealWrapper origin='left' delay={300} duration={3000} distance='500px'  reset={true}>
             <Flex justify={'right'}>
             <Image src='/back/2.svg' mt='180px' />
             </Flex>
-
+            </RevealWrapper>
+            </Container>
         </Box>
 
 
