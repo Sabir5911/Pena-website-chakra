@@ -5,6 +5,7 @@ import Section from './components/Section'
 import Third from './components/Third'
 import Secondlast from './components/Secondlast'
 import {Box} from '@chakra-ui/react'
+import Link from 'next/link'
 
 export default function Web2() {
   return <>
@@ -13,5 +14,7 @@ export default function Web2() {
     <Section />
     <Third />
     <Secondlast />
+
+    
   </>
 }
