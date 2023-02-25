@@ -1,9 +1,9 @@
 import React from 'react'
-import Second from './components/Second'
-import Contect from './components/Contect'
+import Second from './components/HeroSection'
+import Contect from './components/ThirdPart'
 import Section from './components/Section'
-import Third from './components/Third'
-import Secondlast from './components/Secondlast'
+import Third from './components/Student'
+import Secondlast from './components/Parthers'
 import {Box} from '@chakra-ui/react'
 import Link from 'next/link'
 

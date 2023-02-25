@@ -25,28 +25,33 @@ export const Data=[
       },
       
    
-
-    {
-        id:4,
-        src:'https://imageio.forbes.com/specials-images/imageserve/632dbbaa69b953ca837d2c1f/Network-and-data-connection/0x0.jpg?format=jpg&crop=5700,3206,x0,y0,safe&width=960',
-       Heading:"Ambient Computing and IoT",
-     
-    },
-    {
-        id:5,
-        src:'https://genomicsengland.imgix.net/images/Technology/Bioinformatics-and-data-hands.jpg?auto=format%2Ccompress&fit=max&q=80&w=1200&s=950955ef2fb07d99e2411d5f1078cc2f',
-       Heading:"Genomics and",
- 
-    },
-    {
-        id:6,
-        src:'https://www.tail-f.com/wordpress/wp-content/uploads/2021/07/transaction-blog-feature-image-e1626927706942.jpg',
-       Headin:"Network and Automation",
-       Text:'Apply Now',
-       link:'../Net'
-    }
 ]
 
+export const data=[
+
+
+
+  {
+    id:1,
+    src:'https://imageio.forbes.com/specials-images/imageserve/632dbbaa69b953ca837d2c1f/Network-and-data-connection/0x0.jpg?format=jpg&crop=5700,3206,x0,y0,safe&width=960',
+   Heading:"Ambient Computing and IoT",
+ 
+},
+{
+    id:2,
+    src:'https://genomicsengland.imgix.net/images/Technology/Bioinformatics-and-data-hands.jpg?auto=format%2Ccompress&fit=max&q=80&w=1200&s=950955ef2fb07d99e2411d5f1078cc2f',
+   Heading:"Genomics and",
+
+},
+{
+    id:3,
+    src:'https://www.tail-f.com/wordpress/wp-content/uploads/2021/07/transaction-blog-feature-image-e1626927706942.jpg',
+   Headin:"Network and Automation",
+   Text:'Apply Now',
+   link:'../Net'
+}
+
+]
 export const Data3=[{
 
   id:1,

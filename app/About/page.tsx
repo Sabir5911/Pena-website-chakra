@@ -2,7 +2,7 @@
 import React from 'react'
 import { Box, Button, Container, Flex, Heading, Text, Image, HStack } from "@chakra-ui/react"
 import Header from '../components/Header'
-import Last from '../components/End'
+import Last from '../components/Footer'
 import { RevealList, RevealWrapper } from 'next-reveal'
 import { Data4 } from '../Courses/Data'
 export default function page() {
@@ -17,24 +17,24 @@ export default function page() {
 
           {Data4.map((elm) => (
             <Box>
-                   
-                   <RevealList interval={100} origin='left' delay={200} duration={1000} distance='500px' reset={true}>
+
+              <RevealList interval={100} origin='left' delay={200} duration={1000} distance='500px' reset={true}>
 
                 <Heading color={'White'} fontSize='30px' letterSpacing={'3px'} pb='40px'> {elm.Heading1}
-                </Heading> 
+                </Heading>
 
-              <Box width='750px' height='auto' border={'4px'} bg='gray.800' borderColor={'#11AD8E'} fontSize='15px' borderRadius={'12px'} ml='20px' boxShadow={'dark-lg'}>
+                <Box width='750px' height='auto' border={'4px'} bg='gray.800' borderColor={'#11AD8E'} fontSize='15px' borderRadius={'12px'} ml='20px' boxShadow={'dark-lg'}>
 
-                <Text py='30px' color='#11AD8E' textAlign={'justify'} px='20px'>
-                  {elm.text1}
-                </Text>
-              </Box>
-              </RevealList>  
+                  <Text py='30px' color='#11AD8E' textAlign={'justify'} px='20px'>
+                    {elm.text1}
+                  </Text>
+                </Box>
+              </RevealList>
             </Box>
           ))}
-                           
+
         </Flex>
-      </Container> 
+      </Container>
       <Last />
 
     </Box>

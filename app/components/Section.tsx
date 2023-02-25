@@ -5,7 +5,7 @@ import { Data5 } from '../Courses/Data'
 
 export default function Section() {
     return <>
-
+ 
         <Box bg='#09121D' pt='100px'  >
             <Container maxWidth={'1440px'}>
 
@@ -19,9 +19,10 @@ export default function Section() {
                         resembles a cross between a corporate venture and an educational project.
                     </Text>
                 </Box>
-                <RevealWrapper origin='left' delay={200} duration={1000} distance='250px' reset={true}>
+                <RevealList interval={100} origin='top' delay={200} duration={1000} distance='250px' reset={true}>
 
                     <Flex justifyContent={'center'} gap='25px' mt='100px' pb={'40px'} color={'white'} fontWeight='thin' letterSpacing={'1px'}>
+
                         {
                             Data5.map((elm) => (
 
@@ -34,7 +35,7 @@ export default function Section() {
                         }
 
                     </Flex>
-                </RevealWrapper>
+                    </RevealList>
 
             </Container>
         </Box>
