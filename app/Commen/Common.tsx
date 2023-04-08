@@ -7,7 +7,7 @@ export default function Common() {
     return <>
 
         <Box textAlign={'center'} boxShadow='dark-lg' border='10px' borderRadius={'8px'} w='830px' h='170px' mx='auto' mt='40px' bg={'gray.900'}>
-        <RevealWrapper origin='top' delay={200} duration={1200} distance='50px' reset={true}>
+        <RevealWrapper origin='top' delay={200} duration={1200} distance='250px' reset={true}>
 
             <Heading color='#11AD8E' py='10px' pt='51px' fontSize={'4xl'}>
                 Core Quarters Common in All Specializations

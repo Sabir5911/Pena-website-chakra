@@ -33,7 +33,7 @@ export default function page() {
                   <Text color={'white'} fontSize='14px' pl='32px' pr='11px' textAlign={'justify'}> {elm.text2}</Text>
 
                   <Divider color={'white'} my='16px' /> 
-                  <Link colorScheme={'teal'} color='white'>Read More</Link>     
+                  <Link colorScheme={'teal'} color='white' >Read More</Link>     
                 </Box>
                 
                 <Box w='300px' h='380px' bg='gray.700' boxShadow='dark-lg' border='10px' borderRadius={'8px'}fontFamily='inherit' >
