@@ -5,7 +5,7 @@ import { RevealWrapper } from  'next-reveal'
 
 export default function Header() {
   return <>
-         <RevealWrapper origin='top' delay={100} duration={600} distance='1000px' reset={true}>
+        
 
      <Box  fontSize={{sm:'12px',base:'10px',lg:"20px"}} fontFamily='inherit'  height={{sm:'60px',base:'60px',lg:"110px"}} fontWeight={'medium'} bg='rgba(18, 18, 18, 0.4)' boxShadow={'rgba(18, 18, 18, 0.4)'} >
 
@@ -50,7 +50,6 @@ export default function Header() {
       </Container>
 
     </Box>
-    </RevealWrapper>
 
   </>
 }
