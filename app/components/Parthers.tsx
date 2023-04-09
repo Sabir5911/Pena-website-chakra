@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Button, Container, Flex, Heading, Text, Image, Card } from "@chakra-ui/react"
-import Last from './Footer'
 import { RevealWrapper } from 'next-reveal'
+import Footer from './Footer'
 
 export default function Secondlast() {
   return <>
@@ -51,7 +51,7 @@ export default function Secondlast() {
         </Box>
 
       </Container>
-      <Last />
+      <Footer />
 
 
     </Box>

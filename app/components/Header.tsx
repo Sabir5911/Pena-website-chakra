@@ -1,7 +1,6 @@
 import React from 'react'
 import { Box, Button, Container, Flex, Heading, Image,Text } from "@chakra-ui/react"
 import Link from 'next/link'
-import { RevealWrapper } from  'next-reveal'
 
 export default function Header() {
   return <>

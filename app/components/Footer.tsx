@@ -3,7 +3,7 @@ import React from 'react'
 import { Box, Button, Container, Flex, Heading, Text, Image, SimpleGrid, Input, Link, Divider } from "@chakra-ui/react"
 import { RevealWrapper } from 'next-reveal'
 
-export default function Last() {
+export default function Footer() {
   return <>
     <Box mt='50px'   backgroundImage={'b.svg'} >
     <RevealWrapper origin='left' delay={100} duration={600} distance='500px' reset={true}>
